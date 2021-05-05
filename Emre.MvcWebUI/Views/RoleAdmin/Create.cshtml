@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2>Create Role</h2>
+<div class="container">
+
+    <hr />
+    @Html.ValidationSummary()
+    @using (Html.BeginForm())
+    {
+        <div class="form-group">
+            <label>Name</label>
+            <input name="name" value="@Model" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+    }
+
+</div>
